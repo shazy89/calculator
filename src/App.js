@@ -1,11 +1,13 @@
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <div className="intro">
-      <div className="calculator"></div>
+      <div className="calculator box">
+        <div className="digit-screen box"></div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;

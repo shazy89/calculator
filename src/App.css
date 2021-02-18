@@ -36,5 +36,16 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  box-shadow: 5px 30px 20px rgb(0, 0, 0);
+  box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.63);
+}
+
+.digit-screen {
+  background-color: #fff;
+  border: 2px transparent;
+  width: 90%;
+  height: 20%;
+  border-radius: 100px;
+  margin: auto;
+  margin-top: 3%;
+  box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.63);
 }
