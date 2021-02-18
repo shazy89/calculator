@@ -1,16 +1,26 @@
+import React, { useState } from "react";
 import "./App.css";
 import { characters } from "./components/index";
 import Row from "./components/Row";
 const App = () => {
+  const [total, setTotal] = useState(0);
+  const [number, setNumber] = useState([]);
+
   const { firstRow, secondRow, thirdRow, fourthRow, lastRow } = characters;
+
+  console.log(number);
   const select = (e) => {
-    // e.target.innerText
     console.log(e.target.innerText);
+    setNumber([...number, e.target.innerText]);
   };
+  const targtNumber = number.join("");
+  console.log(targtNumber);
   return (
     <div className="intro">
       <div className="calculator box">
-        <div className="digit-screen box"></div>
+        <div className="digit-screen box">
+          <div className="text-box">{targtNumber}</div>
+        </div>
 
         <Row select={select} characters={firstRow} />
         <Row select={select} characters={secondRow} />

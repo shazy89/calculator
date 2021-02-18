@@ -41,6 +41,7 @@ html {
 
 .digit-screen {
   background-color: #fff;
+  position: relative;
   border: 2px transparent;
   width: 90%;
   height: 20%;
@@ -49,6 +50,14 @@ html {
   margin-top: 2%;
   box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.63);
 }
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  font-size: 150%;
+  letter-spacing: 2px;
+}
+
 .buttons-row {
   width: 90%;
   height: 12%;
