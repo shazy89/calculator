@@ -1,8 +1,7 @@
 import "./App.css";
-import { characters } from "./components/data";
+import { characters } from "./components/index";
 import Row from "./components/Row";
 const App = () => {
-  console.log(characters);
   const { firstRow, secondRow, thirdRow, fourthRow, lastRow } = characters;
   const select = (e) => {
     // e.target.innerText
@@ -17,12 +16,7 @@ const App = () => {
         <Row select={select} characters={secondRow} />
         <Row select={select} characters={thirdRow} />
         <Row select={select} characters={fourthRow} />
-
-        <div className="buttons-row">
-          <button className="btn-zero pure-u-1-3">0</button>
-          <button className="btn pure-u-1-3">,</button>
-          <button className="btn pure-u-1-3">=</button>
-        </div>
+        <Row select={select} characters={lastRow} />
       </div>
     </div>
   );
