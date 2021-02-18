@@ -28,7 +28,7 @@ html {
     rgba(255, 255, 255, 0.836),
     rgba(85, 85, 85, 0.555)
   );
-  border: 2px solid #080808;
+  border: transparent;
   width: 40%;
   height: 80vh;
   position: absolute;
@@ -67,15 +67,7 @@ html {
   text-decoration: none;
   outline: none;
   transition: all 0.2s;
-}
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.btn:active {
-  transform: translate(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  font-size: 150%;
 }
 
 .btn-zero {
@@ -87,4 +79,15 @@ html {
   margin-left: 2%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   outline: none;
+}
+.btn:hover,
+.btn-zero:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active,
+.btn-zero:active {
+  transform: translate(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
