@@ -1,11 +1,7 @@
-# Installing
-
-After cloning this repo, first run the Rails server:
-
 # Frontend
 
 ```
-
+     After cloning this repo:
      cd ./calculator
      npm install
      npm start
