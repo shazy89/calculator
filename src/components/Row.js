@@ -1,8 +1,8 @@
 import React from "react";
 
 const Row = ({ select, characters }) => {
-  const chars = characters.map((char) => (
-    <button onClick={select} className="btn pure-u-1-4">
+  const chars = characters.map((char, index) => (
+    <button key={index} onClick={select} className="btn pure-u-1-4">
       {char}
     </button>
   ));
