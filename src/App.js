@@ -1,13 +1,21 @@
 import "./App.css";
-
+import { characters } from "./components/data";
+import Row from "./components/Row";
 const App = () => {
+  console.log(characters);
+  const select = (e) => {
+    // e.target.innerText
+    console.log(e.target.innerText);
+  };
   return (
     <div className="intro">
       <div className="calculator box">
         <div className="digit-screen box"></div>
 
         <div className="buttons-row">
-          <button className="btn pure-u-1-4">c</button>
+          <button onClick={select} className="btn pure-u-1-4">
+            c
+          </button>
           <button className="btn pure-u-1-4">+/-</button>
           <button className="btn pure-u-1-4">%</button>
           <button className="btn pure-u-1-4">%</button>
