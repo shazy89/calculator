@@ -5,3 +5,4 @@ export const characters = {
   fourthRow: ["7", "8", "9", "+"],
   lastRow: ["0", ",", "="],
 };
+export const specialChars = ["c", "+/-", "%", "/", "*", "-", "+", ",", "="];
