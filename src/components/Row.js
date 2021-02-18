@@ -34,9 +34,3 @@ const Row = ({ select, characters }) => {
 };
 
 export default Row;
-//<button onClick={select} className="btn pure-u-1-4">
-//c
-//</button>
-//<button className="btn pure-u-1-4">+/-</button>
-//<button className="btn pure-u-1-4">%</button>
-//<button className="btn pure-u-1-4">%</button>
